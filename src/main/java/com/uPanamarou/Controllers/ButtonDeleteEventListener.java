@@ -22,7 +22,7 @@ public class ButtonDeleteEventListener extends MouseAdapter {
         try {
             if (bookService.deleteBook(BookModel.getBook())) {
                 System.out.println("Book delete successfully");
-                library.readDB();
+                library.readDB(null);
             }else
                 System.out.println("Some thing going wrong");
         } catch (SQLException ex) {

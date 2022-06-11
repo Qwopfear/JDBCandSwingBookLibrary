@@ -64,4 +64,24 @@ public class BookService {
         return true;
     }
 
+    public PreparedStatement selectBy(String selectRow,String selectString) throws SQLException {
+        PreparedStatement ps;
+        if (selectRow.length() > 0){
+            ps = connection.prepareStatement("SELECT * FROM  Books WHERE ? = ?+'%'");
+
+            System.out.println(selectRow);
+            System.out.println(selectString);
+        ps.setString(1,selectRow);
+        ps.setString(2,selectString);
+
+
+
+        }
+        else {
+            ps = connection.prepareStatement("SELECT * FROM  Books ");
+            System.out.println("Я тут");
+        }
+        return ps;
+    }
+
 }

@@ -23,7 +23,7 @@ public class AddBookFrame extends JFrame {
 
         }
         else
-            book = new String[4];
+            book = new String[5];
 
         try {
             JPanel mainPanel = new JPanel();

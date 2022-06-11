@@ -56,7 +56,7 @@ public class AddToDBEventListener extends MouseAdapter {
         if (bookAdded){
             System.out.println("book successfully added to database");
             targetFrame.dispose();
-            library.readDB();
+            library.readDB(null);
         }
 
 
