@@ -7,11 +7,11 @@ public class JDBCConnectionData {
 
 
     public String getMyDBUsername() {
-        return "root";
+        return "bestuser";
     }
 
     public String getMyDBPassword() {
-        return "TYTbvb766@";
+        return "bestuser";
     }
 
     public String getMyDBConnectionUrl() {
